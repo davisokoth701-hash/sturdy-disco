@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenWave Online Store Presentation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Slide 1 -->
+  <div class="slide" id="slide1">
+    <h1>GreenWave Online Store</h1>
+    <h2>Online Dropshipping Business</h2>
+    <p>Mission: To provide eco-friendly products that help people live sustainably.</p>
+    <p>Vision: To become a leading online retailer of eco-conscious products worldwide.</p>
+    <img src="20251118_111039.jpg" alt="Eco-Friendly Products">
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide hidden" id="slide2">
+    <h2>Business Idea</h2>
+    <ul>
+      <li>Eco-friendly products like reusable bottles, bamboo utensils, biodegradable bags.</li>
+      <li>Unique selling point: Affordable, sustainable products delivered to your door.</li>
+      <li>Target audience: Environment-conscious people, 18–40 years old, online shoppers.</li>
+    </ul>
+    <img src="image.jpg" alt="Eco-Friendly Lifestyle">
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="slide hidden" id="slide3">
+    <h2>Market Analysis</h2>
+    <ul>
+      <li>Trend: Eco-friendly products growing globally.</li>
+      <li>Competitors: EcoRoots, Package Free Shop, EarthHero</li>
+      <li>Opportunity: Affordable sustainable products for everyday use</li>
+      <li>Challenge: Competing with established brands</li>
+    </ul>
+    <img src="image.jpg" alt="Market Analysis">
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="slide hidden" id="slide4">
+    <h2>Marketing Strategy</h2>
+    <ul>
+      <li>Social media campaigns (Instagram, TikTok, Facebook)</li>
+      <li>Influencer partnerships & eco bloggers</li>
+      <li>Email newsletters & promotions</li>
+      <li>SEO optimized website</li>
+    </ul>
+    <img src="20251118_111039.jpg" alt="Marketing">
+  </div>
+
+  <!-- Slide 5 -->
+  <div class="slide hidden" id="slide5">
+    <h2>Operations Plan</h2>
+    <ul>
+      <li>Products sourced via dropshipping</li>
+      <li>Orders fulfilled directly by suppliers</li>
+      <li>Tools: Shopify, Canva, Mailchimp</li>
+    </ul>
+    <img src="20251118_111039.jpg" alt="Operations">
+  </div>
+
+  <!-- Slide 6 -->
+  <div class="slide hidden" id="slide6">
+    <h2>Financial Plan</h2>
+    <ul>
+      <li>Startup Costs: Website $150, Marketing $200, Branding $50</li>
+      <li>Revenue Model: $5–$15 profit per product</li>
+      <li>Expenses: Marketing $100/month, Website $29/month</li>
+    </ul>
+    <img src="20251118_111039.jpg" alt="Financial Plan">
+  </div>
+
+  <!-- Slide 7 -->
+  <div class="slide hidden" id="slide7">
+    <h2>Goals & Milestones</h2>
+    <ul>
+      <li>Short-term (1–3 months): Launch website, 50 sales</li>
+      <li>Medium-term (6–12 months): Build social media, 500+ sales</li>
+      <li>Long-term (1–3 years): Expand products, 5000+ annual sales</li>
+    </ul>
+    <img src="20251118_111039.jpg" alt="Goals">
+  </div>
+
+  <!-- Slide 8 -->
+  <div class="slide hidden" id="slide8">
+    <h2>Conclusion</h2>
+    <ul>
+      <li>Combines sustainability with convenience</li>
+      <li>Strong market potential with eco-conscious consumers</li>
+      <li>Next Steps: Launch website, start marketing, track performance</li>
+    </ul>
+    <img src="20251118_111039.jpg" alt="Conclusion">
+  </div>
+
+  <!-- Navigation Buttons -->
+  <div class="nav-buttons">
+    <button onclick="prevSlide()">Previous</button>
+    <button onclick="nextSlide()">Next</button>
+  </div>
+
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 8;
+
+    function showSlide(n) {
+      for (let i = 1; i <= totalSlides; i++) {
+        document.getElementById('slide' + i).classList.add('hidden');
+      }
+      document.getElementById('slide' + n).classList.remove('hidden');
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides) currentSlide++;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      if (currentSlide > 1) currentSlide--;
+      showSlide(currentSlide);
+    }
+  </script>
+
+</body>
+</html>
