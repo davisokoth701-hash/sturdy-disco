@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <body style="font-family: arial; text-align: center; margin-top:  50px;">
+        <h1 id="myToy">I am a happy toy🤣</h1>
+        <button id="magicButton" style="padding: 10px 20px; font-size: 18px;">
+            press me!
+         </button>
+ <script>
+            const toy = document.getElementById("myToy");
+            const button = document.getElementById("magicButton");
+           button.addEventListener("click", () => {
+               toy.textContent = "thanks for clicking Me 😢";
+               toy.style.color = "red";
+           });
+        </script>
+    </body>
+</html>
